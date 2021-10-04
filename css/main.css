@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/negative-space-black-forest-dawn.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: cover;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 1px 1px 4px 0 rgba(255, 255, 255, 0);
+
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.212);
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: rgba(255, 255, 255, 0.212);
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f454;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.header .menu {
+  display: grid;
+  justify-items: center;
+
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  justify-content: center;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: rgb(255, 255, 255);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: rgb(255, 255, 255);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.wrapper-abut {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  background-position: center;
+  border: 1px solid black;
+
+  background-color: white;
+  text-align: center;
+}
+
+.info {
+  width: 250px;
+  background-color: rgb(175, 175, 175);
+  border-radius: 5px;
+  margin: 20px;
+}
+i {
+  float: left;
+}
+
+.bild1 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 40px 2px;
+}
+
+.bild2 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 40px 2px;
+}
+.bild3 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 40px 2px;
+}
+.bild4 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 40px 2px;
+}
+.contact {
+  display: flex;
+  color: white;
+  background-color: black;
+  width: 100vh;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.media {
+  padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    display: inline-block;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+  .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/negative-space-black-forest-dawn.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+    color: white;
+  }
+  .wrapper-abut {
+    height: 100%;
+    text-align: center;
+  }
+
+  .bild1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px 2px;
+  }
+  .bild2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px 2px;
+  }
+  .bild3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px 2px;
+  }
+  .bild4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px 2px;
+  }
+  .oneTwoImage {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+  }
+  .threeFoureImage {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+  }
+  .info {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact {
+    display: inline-block;
+    flex-direction: row;
+  }
+
+  .tegel {
+    width: 300px;
+    height: 150px;
+  }
+  .tele1 {
+    width: 300px;
+    height: 150px;
+  }
+  .socialMedia {
+    width: 300px;
+    height: 150px;
+  }
+}
