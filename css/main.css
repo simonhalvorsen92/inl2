@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
@@ -11,10 +14,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/negative-space-black-forest-dawn.jpg);
+  background-image: url(/images/negative-space-black-forest-dawn.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
+  height: 100vh;
   background-size: cover;
 }
 main {
@@ -156,6 +159,7 @@ a {
   background-color: rgb(175, 175, 175);
   border-radius: 5px;
   margin: 20px;
+  padding: 5px;
 }
 i {
   float: left;
@@ -223,7 +227,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/negative-space-black-forest-dawn.jpg);
+    background-image: url(/images/negative-space-black-forest-dawn.jpg);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -273,21 +277,10 @@ i {
     justify-content: center;
     align-items: center;
   }
-  .contact {
-    display: inline-block;
-    flex-direction: row;
-  }
-
-  .tegel {
-    width: 300px;
-    height: 150px;
-  }
-  .tele1 {
-    width: 300px;
-    height: 150px;
-  }
-  .socialMedia {
-    width: 300px;
-    height: 150px;
+  .textincontact {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    width: 100%;
   }
 }
